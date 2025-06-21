@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Sauhar Khanal Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,670 +9,553 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        /*======================================
+        //--//-->   ABOUT
+        ======================================*/
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
 
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
 
-<style>
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+        .skill-mf .progress {
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+        #typing-animation:before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
 
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+            to {
+                width: 0;
+            }
+        }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+        /* project image zoom effect */
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
 
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
 
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Sauhar Khanal</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sauhar Khanal</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Sauhar Khanal</span></h1>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.jpg);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hello!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Sauhar Khanal</span></h1>
 
-						<script>
+                                <!-- Element to contain animated typing -->
+                                <span id="typing-animation"></span>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
+                                <script>
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
 
-						// Create an array of typing text
-						const typingTexts = [
-						'Passionate',
-						'Persistent',
-						'Creative',
-						];
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Passionate',
+                                        'Persistent',
+                                        'Creative',
+                                    ];
 
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
 
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
 
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
 
-						</script>
-
-						<br>
-						<br>
-			            <h2>Data Engineer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.hackerrank.com/profile/sauhar" class="btn btn-primary py-3 px-4" target="_blank">HackerRank</a> 
-							<a href="https://github.com/sauhar" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+                                <br><br>
+                                <h2>Data Engineer</h2>
+                                <p>
+                                    <a href="https://www.hackerrank.com/profile/sauhar" class="btn btn-primary py-3 px-4" target="_blank">HackerRank</a> 
+                                    <a href="https://github.com/sauhar" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
-
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <!-- <div class="about-img">
-										<img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div> -->
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <!-- <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Sauhar Khanal</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
-										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
-									  </div> -->
-									</div>
-								  </div>
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <!-- <div class="about-img">
+                                            <img src="images/about-me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                        </div> -->
+                                    </div>
+                                    <!-- Details next to profile image -->
+                                    <div class="col-sm-6 col-md-7">
+                                        <!-- <div class="about-info">
+                                            <p><span class="title-s">Name: </span> <span>Sauhar Khanal</span></p>
+                                            <p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
+                                            <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+                                            <p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+                                        </div> -->
+                                    </div>
+                                </div>
 
-								<div class="skill-mf">
-									<h2 class="mb-4">Skills</h2>
-									<!-- <p class="title-s">Skills</p> -->
-									<span>SQL</span>
-									 <!-- <span class="pull-right">95%</span> -->
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Data Visualization</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Statistical Analysis</span> 
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>Skilled data analyst & engineer with expertise in healthcare
-									analytics, ETL processes, and big data. Holding a degree in
-									Computer Engineering, I’ve delivered impactful insights and
-									mentoring future professionals in my tenure in my organizations.
-									Certified in Data Visualization, SQL, and Machine Learning, I’m
-									passionate about driving innovation and efficiency through data-
-									driven solutions.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>US healthcare and Bussiness</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>Nepali, English, Hindi</span></li>
-									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
-									<li class="d-flex"><span>Other Skills:</span> <span> PostgreSQL, MongoBD, Redshift,Azure Cloud, Excel, Git, JIRA, HubSpot</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Trekking</span></li>
-									
-								</ul>
-							</div>
-						</div>
+                                <div class="skill-mf">
+                                    <h2 class="mb-4">Skills</h2>
+                                    <span>SQL</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>PYTHON</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Data Visualization</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Statistical Analysis</span> 
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    
+                                    <span>Machine Learning</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                <h1 class="big">About</h1>
+                                <h2 class="mb-4">About Me</h2>
+                                
+                                <p>Skilled data analyst & engineer with expertise in healthcare
+                                    analytics, ETL processes, and big data. Holding a degree in
+                                    Computer Engineering, I've delivered impactful insights and
+                                    mentoring future professionals in my tenure in my organizations.
+                                    Certified in Data Visualization, SQL, and Machine Learning, I'm
+                                    passionate about driving innovation and efficiency through data-
+                                    driven solutions.</p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+                                    <li class="d-flex"><span>Domain:</span> <span>US healthcare and Bussiness</span></li>
+                                    <li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>Nepali, English, Hindi</span></li>
+                                    <li class="d-flex"><span>Other Skills:</span> <span> PostgreSQL, MongoBD, Redshift,Azure Cloud, Excel, Git, JIRA, HubSpot</span></li>
+                                    <li class="d-flex"><span>Interest:</span> <span>Traveling, Trekking</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<!-- <p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p> -->
-								<!-- <p><a href="https://www.linkedin.com/in/sauhar-khanal-87b058199/" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p> -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>Data Engineer/Analyst with 3+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis.</p>
-			<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://www.canva.com/design/DAF3oJSd4Nc/ebRhiewhEbXOeeLKeYCAhA/view?utlId=h504bd72e5d#1" class="btn btn-primary py-4 px-5"  target="_blank">Download CV</a></p>
-    			</div>
-    		</div>
-          </div>
+                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                            <div class="text">
+                                <!-- <p class="mb-4">
+                                    <span class="number" data-number="30">0</span> <span>+</span>
+                                    <span>&nbsp; Projects completed</span>
+                                </p> -->
+                                <!-- <p><a href="https://www.linkedin.com/in/sauhar-khanal-87b058199/" class="btn btn-primary py-3 px-3" target="_blank">LinkedIn</a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-
-			<div class="col-md-6 mb-4"></div>
-
-					<div class="resume-wrap ftco-animate">
-					<span class="date">Jun 2025 - Present</span>
-					<h2>Data Engineer</h2>
-					<span class="position">Bits Kraft</span>
-					<p class="mt-4">A global provider of software-based innovation engineering services using disruptive technologies such as Machine Learning & AI, the Internet of Things (IoT) and Cloud based solutions and more
-						<ul>
-							<li> Analyze and organize raw data from various applications to enable effective data utilization and reporting.</li>
-							<li>Assess business requirements and objectives to transform raw data into actionable insights through predictive and prescriptive modeling.</li>
-							<li>Manage structured and unstructured data, along with metadata, within a Big Data platform.</li>
-							 Design and develop enterprise-level Data Warehouses based on business and technical requirements.
-							<li>Create, implement, and maintain CI/CD data pipelines to ensure efficient and reliable data workflows.</li>
-							<li>Schedule, manage, and monitor data processing jobs, including troubleshooting and optimization as needed.</li>
-							<li>Develop and integrate scalable applications within the data platform ecosystem.</li>
-							<li>Diagnose and resolve issues related to application and data pipeline performance, ensuring system reliability and efficiency.</li>
-						</ul>
-					</p>
-				</div>
-				<div class="col-md-6 mb-4"></div>
-				  <div class="resume-wrap ftco-animate">
-					<span class="date">April 2025 - Present</span>
-					<h2>Part Time Lecturer</h2>
-					<span class="position">Cosmos College of Management and Technology</span>
-					<p class="mt-4">Educational Institute
-						<ul>
-							<li>Utilized diverse learning modalities and supplementary materials to enhance the learning experience and enrich presentations.</li>
-							<li>Assessed and refined lesson plans and curriculum content to promote student-centered learning outcomes.</li>
-							<li>Integrated instructional technologies into course delivery to increase student engagement and improve educational effectiveness.</li>
-						</ul>
-					</p>
-				</div>
-
-			</div>
-
-		
-
-				<div class="col-md-6"></div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">November 2022 - March 2025</span>
-						<h2>Data Engineer</h2>
-						<span class="position">Cedar Gate Technologies</span>
-						<p class="mt-4">Provides a high-performance healthcare platform designed to support value-based care. 
-							<ul>
-								<li>Led end-to-end US Healthcare data implementations, including config setup, data delivery, and ETL transformation using Python and SQL.</li>
-								<li>Optimized and refactored complex business logic in ETL pipelines and internal engines, enhancing batch data processing performance and enabling real-time insights..</li>
-								<li>Spearheaded production issue resolution and quality enhancements improving data integrity and reducing system downtime.</li>
-								<li>Aggregated, cleaned, and standardized structured and unstructured data from SQL sources, enabling downstream analytics.</li>
-								<li>Built entry-level ETL pipelines with Apache Airflow to orchestrate healthcare data processing tasks, improving automation and reproducibility.</li>
-								<li>Collaborated on Agile sprint planning while mentoring junior engineers and leading data integration across diverse vendor formats with documented workflows.</li>
-							</ul>
-						</p>
-					</div>
-
-			
-					<div class="col-md-6 mb-4"></div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">October 2020 - February 2021</span>
-						<h2>Associate Data Analyst</h2>
-						<span class="position">GrowByData Services</span>
-						<p class="mt-4"> Works in marketing, helping businesses optimize their digital marketing strategies using data analytic. 
-							<ul>
-								<li>Managing the product data from Shopify using Microsoft Excel files.</li>
-								<li>Experience in interacting with foreign clients, discussing requirements, and consulting on various issues.</li>
-								<li>Reconciliation of the data set.</li>
-								<li>Participated in stand-up meetings and other required Data meetings such as problem-solving and update meetings.</li>
-							</ul>
-						</p>
-					</div>
-
-						<div class="col-md-6 mb-4"></div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">February 2024 - Present</span>
-						<h2>Coordinator</h2>
-						<span class="position">Code For Nepal</span>
-						<p class="mt-4">Nonprofit organization that promotes digital literacy and empowers individuals through technology. 
-							<ul>
-								<li>Engaging with the core team to create and brainstorm the fellowship ideas.</li>
-								<li>Providing guidances to the students/learners who want to learn Data Science.</li>
-								<li>Acted as a team lead of mentor’s in Nepal’s first-ever interschool Hackathon 2025 organized by Adhyayan School.</li>
-								<li>Supported the recently organized Hackathon named Data Crunch 2024 to happen successfully.</li>
-							</ul>
-						</p>
-					</div>
-
-					<div class="col-md-6 mb-4"></div>
-				<div class="resume-wrap ftco-animate">
-					<span class="date">February 2025 - Present</span>
-					<h2>Team Member</h2>
-					<span class="position">Google Developer Group Kathmandu</span>
-					<p class="mt-4">Inclusive community where tech enthusiasts—from beginners to pros—come together to learn, share, and support each other through events and programs in Kathmandu.. 
-						<ul>
-							<li>Engaging with the core team to create and brainstorm the fellowship ideas.</li>
-						</ul>
-					</p>
-				</div>
-				
-
-				
-				<div class="col-md-6 mb-4"></div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">November 2019 - February 2020</span>
-						<h2>PHP Developer Intern</h2>
-						<span class="position">Keroneva Designs</span>
-						<p class="mt-4">Keroneva Designs, a company that works on the nepal government website. 
-							<ul>
-								<li>Training and research on PHP Laravel framework.</li>
-								<li>Training and research on launchings the site on live server.</li>
-								<li>Making the Laravel based dynamic website.</li>
-							</ul>
-						</p>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<!-- <span class="date">2014-2018</span> -->
-    					<h2>Bachelor of Engineering</h2>
-    					<span class="position">Institute of Engineering</span>
-    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<!-- <span class="date">2012-2013</span> -->
-    					<h2>Higher Secondary Education Board</h2>
-    					<span class="position">Diamond Secondary School</span>
-    					<!-- <p class="mt-4">Grade: First class distinction.</p> -->
-    				</div>
-				</div>
-    		</div>
-
-    		<!-- <div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div> -->
-    	</div>
     </section>
 
-   
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Resume</h1>
+                    <h2 class="mb-4">Resume</h2>
+                    <p>Data Engineer/Analyst with 3+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis.</p>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-6 text-center ftco-animate">
+                            <p><a href="https://www.canva.com/design/DAF3oJSd4Nc/ebRhiewhEbXOeeLKeYCAhA/view?utlId=h504bd72e5d#1" class="btn btn-primary py-4 px-5" target="_blank">Download CV</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 class="big-4">Experience</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4"></div>
+
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">Jun 2025 - Present</span>
+                    <h2>Data Engineer</h2>
+                    <span class="position">Bits Kraft</span>
+                    <p class="mt-4">A global provider of software-based innovation engineering services using disruptive technologies such as Machine Learning & AI, the Internet of Things (IoT) and Cloud based solutions and more
+                        <ul>
+                            <li> Analyze and organize raw data from various applications to enable effective data utilization and reporting.</li>
+                            <li>Assess business requirements and objectives to transform raw data into actionable insights through predictive and prescriptive modeling.</li>
+                            <li>Manage structured and unstructured data, along with metadata, within a Big Data platform.</li>
+                            <li>Design and develop enterprise-level Data Warehouses based on business and technical requirements.</li>
+                            <li>Create, implement, and maintain CI/CD data pipelines to ensure efficient and reliable data workflows.</li>
+                            <li>Schedule, manage, and monitor data processing jobs, including troubleshooting and optimization as needed.</li>
+                            <li>Develop and integrate scalable applications within the data platform ecosystem.</li>
+                            <li>Diagnose and resolve issues related to application and data pipeline performance, ensuring system reliability and efficiency.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">April 2025 - Present</span>
+                    <h2>Part Time Lecturer</h2>
+                    <span class="position">Cosmos College of Management and Technology</span>
+                    <p class="mt-4">Educational Institute
+                        <ul>
+                            <li>Utilized diverse learning modalities and supplementary materials to enhance the learning experience and enrich presentations.</li>
+                            <li>Assessed and refined lesson plans and curriculum content to promote student-centered learning outcomes.</li>
+                            <li>Integrated instructional technologies into course delivery to increase student engagement and improve educational effectiveness.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-6"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">November 2022 - March 2025</span>
+                    <h2>Data Engineer</h2>
+                    <span class="position">Cedar Gate Technologies</span>
+                    <p class="mt-4">Provides a high-performance healthcare platform designed to support value-based care. 
+                        <ul>
+                            <li>Led end-to-end US Healthcare data implementations, including config setup, data delivery, and ETL transformation using Python and SQL.</li>
+                            <li>Optimized and refactored complex business logic in ETL pipelines and internal engines, enhancing batch data processing performance and enabling real-time insights.</li>
+                            <li>Spearheaded production issue resolution and quality enhancements improving data integrity and reducing system downtime.</li>
+                            <li>Aggregated, cleaned, and standardized structured and unstructured data from SQL sources, enabling downstream analytics.</li>
+                            <li>Built entry-level ETL pipelines with Apache Airflow to orchestrate healthcare data processing tasks, improving automation and reproducibility.</li>
+                            <li>Collaborated on Agile sprint planning while mentoring junior engineers and leading data integration across diverse vendor formats with documented workflows.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">October 2020 - February 2021</span>
+                    <h2>Associate Data Analyst</h2>
+                    <span class="position">GrowByData Services</span>
+                    <p class="mt-4"> Works in marketing, helping businesses optimize their digital marketing strategies using data analytic. 
+                        <ul>
+                            <li>Managing the product data from Shopify using Microsoft Excel files.</li>
+                            <li>Experience in interacting with foreign clients, discussing requirements, and consulting on various issues.</li>
+                            <li>Reconciliation of the data set.</li>
+                            <li>Participated in stand-up meetings and other required Data meetings such as problem-solving and update meetings.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">February 2024 - Present</span>
+                    <h2>Coordinator</h2>
+                    <span class="position">Code For Nepal</span>
+                    <p class="mt-4">Nonprofit organization that promotes digital literacy and empowers individuals through technology. 
+                        <ul>
+                            <li>Engaging with the core team to create and brainstorm the fellowship ideas.</li>
+                            <li>Providing guidances to the students/learners who want to learn Data Science.</li>
+                            <li>Acted as a team lead of mentor's in Nepal's first-ever interschool Hackathon 2025 organized by Adhyayan School.</li>
+                            <li>Supported the recently organized Hackathon named Data Crunch 2024 to happen successfully.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">February 2025 - Present</span>
+                    <h2>Team Member</h2>
+                    <span class="position">Google Developer Group Kathmandu</span>
+                    <p class="mt-4">Inclusive community where tech enthusiasts—from beginners to pros—come together to learn, share, and support each other through events and programs in Kathmandu. 
+                        <ul>
+                            <li>Engaging with the core team to create and brainstorm the fellowship ideas.</li>
+                        </ul>
+                    </p>
+                </div>
+                
+                <div class="col-md-6 mb-4"></div>
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">November 2019 - February 2020</span>
+                    <h2>PHP Developer Intern</h2>
+                    <span class="position">Keroneva Designs</span>
+                    <p class="mt-4">Keroneva Designs, a company that works on the nepal government website. 
+                        <ul>
+                            <li>Training and research on PHP Laravel framework.</li>
+                            <li>Training and research on launchings the site on live server.</li>
+                            <li>Making the Laravel based dynamic website.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <h1 class="big-4">Education</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <h2>Bachelor of Engineering</h2>
+                        <span class="position">Institute of Engineering</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="resume-wrap ftco-animate">
+                        <h2>Higher Secondary Education Board</h2>
+                        <span class="position">Diamond Secondary School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Analytics projects on Python, ML & ETL.</p>
-          </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Projects</h1>
+                    <h2 class="mb-4">Projects</h2>
+                    <p>Below are the sample Data Analytics projects on Python, ML & ETL.</p>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/sauhar/Predict-Employee-Performance" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpeg');"></a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a href="https://github.com/sauhar/Azure_ETL">Azure ETL pipeline</a></h3>
+                            <p>This end-to-end project follows a layered architecture (Bronze → Silver → Gold) and seamlessly integrates Azure Data Factory, Databricks, Synapse Analytics, Delta Lake, and Power BI into a unified data workflow.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="https://github.com/sauhar/ETL_Python_Postgresql" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a href="https://github.com/sauhar/ETL_Python_Postgresql">ETL Python Postgresql</a></h3>
+                            <p>Designed to extract data from a source, transform it as required, and load it into a PostgreSQL database for further processing and analysis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="https://github.com/sauhar/COVID19-Nepal-Forecast" class="block-20 zoom-effect" style="background-image: url('images/proj_3.webp');"></a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a href="https://github.com/sauhar/COVID19-Nepal-Forecast">COVID19 Nepal Forecast</a></h3>
+                            <p>Forecast the cases of covid19 in Nepal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- added justify-content-center to center align the last two projects -->
+            <div class="row d-flex justify-content-center">  
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <h2>More projects on 
+                            <p><a href="https://github.com/sauhar" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+                        </h2>
+                    </div>
+                </div>
+            
+                <h2>Achievements
+                    <p><a href="https://www.linkedin.com/in/sauhar-khanal-87b058199/" class="btn btn-primary py-3 px-5" target="_blank">LinkedIn</a></p>
+                </h2>
+                <ul>
+                    <li>Microsoft Certified Data Fundamentals.</li>
+                    <li>Microsoft Certified AI Fundamentals.</li>
+                    <li>Salesforce AI Associate Certified.</li>
+                    <li>Become a Python Master(Programiz Professional Certificate)</li>
+                    <li>Database and SQL for Data Science.</li>
+                    <li>Data Visualization with Python.</li>
+                    <li>HubSpot Inbound Marketing Certified.</li>
+                    <li>HubSpot Email Marketing Certified.</li>
+                    <li>Participated in LITE Technical Exhibition, 2017, 2018 KEC.</li>
+                </ul>
+            </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/sauhar/Predict-Employee-Performance" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpeg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/sauhar/Azure_ETL">Azure ETL pipeline</a></h3>
-                <p>This end-to-end project follows a layered architecture (Bronze → Silver → Gold) and seamlessly integrates Azure Data Factory, Databricks, Synapse Analytics, Delta Lake, and Power BI into a unified data workflow.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/sauhar/ETL_Python_Postgresql" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/sauhar/ETL_Python_Postgresql">ETL Python Postgresql</a></h3>
-                <p>Designed to extract data from a source, transform it as required, and load it into a PostgreSQL database for further processing and analysis.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/sauhar/COVID19-Nepal-Forecast" class="block-20 zoom-effect" style="background-image: url('images/proj_3.webp');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/sauhar/COVID19-Nepal-Forecast">COVID19 Nepal Forecast</a></h3>
-                <p>Forecast the cases of covid19 in Nepal.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-						<h2>More projects on 
-							<p><a href="https://github.com/sauhar" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
-							 </h2>
-						
-			  </div>
-			</div>
-		
-					<h2>Achievements
-						<p><a href="https://www.linkedin.com/in/sauhar-khanal-87b058199/" class="btn btn-primary py-3 px-5" target="_blank">LinkedIn</a></p>
-					</h2>
-						<ul>
-							<li>Microsoft Certified Data Fundamentals.</li>
-							<li>Microsoft Certified AI Fundamentals.</li>
-							<li>Salesforce AI Associate Certified.</li>
-							<li>Become a Python Master(Programiz Professional Certificate)</li>
-							<li>Database and SQL for Data Science.</li>
-							<li>Data Visualization with Python.</li>
-							<li>HubSpot Inbound Marketing Certified.</li>
-							<li>HubSpot Email Marketing Certified.</li>
-							<li>Participated in LITE Technical Exhibition, 2017, 2018 KEC.</li>
-						</ul>
-					</p>
-	  </div>
     </section>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Contact</h1>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Below are the details to reach out to me!</p>
+                </div>
+            </div>
+
+            <div class="row d-flex contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-map-signs"></span>
+                        </div>
+                        <h3 class="mb-4">Address</h3>
+                        <p><a href="https://www.google.com/maps/place/%E0%A4%B2%E0%A4%B2%E0%A4%BF%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0/data=!4m2!3m1!1s0x39eb19d3cf18ca51:0xd10ec3d53656e18f?sa=X&ved=1t:242&ictx=111" target="_blank">Lalitpur, Nepal</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-4">Email Address</h3>
+                        <p><a href="mailto:info@yoursite.com">sauhark@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<!-- <div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p><a href="https://www.google.com/maps/place/%E0%A4%B2%E0%A4%B2%E0%A4%BF%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0/data=!4m2!3m1!1s0x39eb19d3cf18ca51:0xd10ec3d53656e18f?sa=X&ved=1t:242&ictx=111" 
-					target="_blank">Lalitpur, Nepal</a></p>
-					
-	          </div> -->
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-				<div class="icon d-flex align-items-center justify-content-center">
-					<span class="icon-map-signs"></span>
-				</div>
-				<h3 class="mb-4">Address</h3>
-			  <p><a href="https://www.google.com/maps/place/%E0%A4%B2%E0%A4%B2%E0%A4%BF%E0%A4%A4%E0%A4%AA%E0%A5%81%E0%A4%B0/data=!4m2!3m1!1s0x39eb19d3cf18ca51:0xd10ec3d53656e18f?sa=X&ved=1t:242&ictx=111" 
-				  target="_blank">Lalitpur, Nepal</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">sauhark@gmail.com</a></p>
-	          </div>
-          </div>
-           <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
-	          </div>
-          </div> -->
-
-
-		  <!-- <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href=""><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href=""><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div> -->
-   </div>
- </section>
-
-
- 
-	
     <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a>@ Sauhar Khanal</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by <a>@ Sauhar Khanal</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
