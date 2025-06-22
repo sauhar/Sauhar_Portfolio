@@ -193,6 +193,42 @@
             border-radius: 5px;
         }
         
+        /* Education Section */
+        .education {
+            background-color: #f1f5f9;
+        }
+        
+        .education-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .education-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-item h4 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-item p.date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .education-item p {
+            margin-bottom: 0.5rem;
+        }
+        
         /* Experience Section */
         .experience {
             background-color: #f1f5f9;
@@ -444,6 +480,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -519,6 +556,7 @@
         </div>
     </section>
 
+
     <!-- Experience Section -->
     <section class="section experience" id="experience">
         <div class="container">
@@ -564,11 +602,14 @@
                         <h4>Cedar Gate Technologies</h4>
                         <p class="date">November 2022 - March 2025</p>
                         <ul>
-                            <li>Led end-to-end US Healthcare data implementations, including config setup, data delivery, and ETL transformation using Python and SQL</li>
-                            <li>Optimized and refactored complex business logic in ETL pipelines and internal engines, enhancing batch data processing performance and enabling real-time insights</li>
-                            <li>Spearheaded production issue resolution and quality enhancements improving data integrity and reducing system downtime</li>
-                            <li>Aggregated, cleaned, and standardized structured and unstructured data from SQL sources, enabling downstream analytics</li>
-                            <li>Collaborated on Agile sprint planning while mentoring junior engineers and leading data integration across diverse vendor formats with documented workflows</li>
+                            <li>Led end-to-end US healthcare data implementations, including configuration setup, data delivery, and ETL transformations using SQL and ETL tools.</li>
+                            <li>Standardized and mapped raw healthcare data such as eligibility, medical, pharmacy, and other datatypes into structured formats aligned with client and business needs.</li>
+                            <li>Optimized and refactored complex business logic in ETL pipelines and internal engines, improving batch data processing performance and enabling near real-time insights.</li>
+                            <li>Aggregated, cleaned, and integrated large-scale datasets from diverse SQL and vendor sources into data warehouses, ensuring consistency and accuracy for downstream analytics.</li>
+                            <li>Spearheaded production issue resolution and quality improvements, resulting in enhanced data integrity and reduced system downtime.</li>
+                            <li>Implemented and validated complex data transformation rules to support client-specific data requirements and analytics pipelines.</li>
+                            <li>Identified, analyzed, and interpreted trends or patterns in large-scale healthcare datasets to support data-driven decisions.</li>
+                            <li>Collaborated in Agile sprint planning, mentored junior engineers, and documented workflows to ensure smooth integration across cross-functional teams and formats.</li>
                         </ul>
                     </div>
                 </div>
@@ -630,6 +671,21 @@
         </div>
     </section>
 
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Engineering</h3>
+                <h4>Institute of Engineering(IOE)</h4>
+                <p>Graduated with a Bachelor's degree in Computer Engineering from Tribhuvan University, gaining comprehensive knowledge in software development, algorithms, data structures, and computer systems.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section class="section" id="projects">
         <div class="container">
@@ -672,6 +728,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <!-- Contact Section -->
     <section class="section contact-section" id="contact">
